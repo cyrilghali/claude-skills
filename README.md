@@ -16,6 +16,24 @@ Claude Code skills, hooks, and statusline. Drop into `~/.claude/` and go.
 /pr-comments owner/repo#42            # specific PR
 ```
 
+### Method skills
+
+Skills that shape how work is written, reviewed and delegated. French and English mixed, as they were written.
+
+| Skill | What it does |
+|-------|-------------|
+| [prose](skills/prose/) | The register for every text a human reads: a question heading that carries its stake, the answer first, one why, details in a table, no proof trail. Ships a gate hook that runs on every reply and document write. |
+| [intent-pr](skills/intent-pr/) | A one-sentence PR body carrying the intent; the certification of what was checked goes to the author, in session. |
+| [intent-delegation](skills/intent-delegation/) | Structure a fan-out to subagents around intent, clarity and competence before delegating. |
+| [design-props](skills/design-props/) | Several credible architectures compared on the real code, with the pivotal fact verified, before a design decision. |
+| [doc-pedagogique](skills/doc-pedagogique/) | An explanatory document for a newcomer: a running example, honest verdicts, decisions framed as questions. |
+| [page-visuelle](skills/page-visuelle/) | Turn a document into a visual page: diagrams, timelines, ER cards, QA by screenshot. |
+| [naming-review](skills/naming-review/) | Review identifiers so they read from the call site; with evals. |
+| [torture-test](skills/torture-test/) | An adversarial QA pass that attacks code and tests only where a named beneficiary gains. |
+| [mutation-test](skills/mutation-test/) | Mutation testing of a branch by parallel agents, one mutant at a time, survivors reported as the assertion that would kill them. |
+| [rewrite-commits](skills/rewrite-commits/) | Collapse a draft PR's iteration commits into one to three atomic commits. |
+| [dense-brief](skills/dense-brief/) | Answer an expert at maximum information density. |
+
 ### Plugins
 
 **[docs](plugins/docs/)** — Documentation authoring workflow with 9 skills:
